@@ -1,0 +1,5 @@
+Place you data files in this folder.
+To access these files, the directory is: "data/name-of-data-file"
+For example, to read in a .csv file from this folder to an object named 'd' in your script, run:
+
+d <- read.csv("data/my-csv-file.csv")
