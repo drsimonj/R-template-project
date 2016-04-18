@@ -1,0 +1,28 @@
+---
+title: "README"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Template Project
+
+This project provides a template structure of folders and files for an R project.
+
+## Folder Structure
+
+The project comprises of three main folders in which you would store certain files.
+
+### *data/*
+
+This folder should contain data files like .csv, .xls, .spss, etc.
+
+### *R/*
+
+This folder should contain R script files.
+
+### *Rmd/*
+
+This folder should contain all R markdown and associated files.
