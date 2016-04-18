@@ -1,0 +1,43 @@
+---
+title: "Title"
+author: "Author Names"
+date: "Date"
+output:
+  word_document:
+    reference_docx: "reference_docx/APA-style-01.docx"
+    fig_caption: true
+---
+
+This is a template R Markdown file for producing APA-style word documents. Note that it's not APA proper, but close enough for most purposes. It uses the styles set in the "reference_docx/APA-style-01.docx" word file. Using this file requires that you have Microsoft Word installed on your system.
+
+The following text is used to demonstrate the styles that this document has:
+
+# Header 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nisl nec pulvinar ultrices. Nam luctus molestie vehicula. Vestibulum congue feugiat lacus, consectetur scelerisque massa efficitur vulputate. Proin faucibus diam tellus, in auctor ex ullamcorper et.
+
+Quisque metus felis, tempor nec dignissim quis, mollis eget urna. In eget est ligula. Duis ultricies velit ac arcu accumsan aliquet. Pellentesque sollicitudin diam eget augue tincidunt congue. In vulputate dignissim quam et dictum. Praesent sed erat euismod, dictum ligula quis, dapibus augue. Etiam hendrerit varius eros, ut consequat libero lacinia id.
+
+## Header 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nisl nec pulvinar ultrices. Nam luctus molestie vehicula. Vestibulum congue feugiat lacus, consectetur scelerisque massa efficitur vulputate. Proin faucibus diam tellus, in auctor ex ullamcorper et.
+
+Quisque metus felis, tempor nec dignissim quis, mollis eget urna. In eget est ligula. Duis ultricies velit ac arcu accumsan aliquet. Pellentesque sollicitudin diam eget augue tincidunt congue. In vulputate dignissim quam et dictum. Praesent sed erat euismod, dictum ligula quis, dapibus augue. Etiam hendrerit varius eros, ut consequat libero lacinia id.
+
+### Header 3
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nisl nec pulvinar ultrices. Nam luctus molestie vehicula. Vestibulum congue feugiat lacus, consectetur scelerisque massa efficitur vulputate. Proin faucibus diam tellus, in auctor ex ullamcorper et.
+
+Quisque metus felis, tempor nec dignissim quis, mollis eget urna. In eget est ligula. Duis ultricies velit ac arcu accumsan aliquet. Pellentesque sollicitudin diam eget augue tincidunt congue. In vulputate dignissim quam et dictum. Praesent sed erat euismod, dictum ligula quis, dapibus augue. Etiam hendrerit varius eros, ut consequat libero lacinia id.
+
+#### Header 4
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nisl nec pulvinar ultrices. Nam luctus molestie vehicula. Vestibulum congue feugiat lacus, consectetur scelerisque massa efficitur vulputate. Proin faucibus diam tellus, in auctor ex ullamcorper et.
+
+Quisque metus felis, tempor nec dignissim quis, mollis eget urna. In eget est ligula. Duis ultricies velit ac arcu accumsan aliquet. Pellentesque sollicitudin diam eget augue tincidunt congue. In vulputate dignissim quam et dictum. Praesent sed erat euismod, dictum ligula quis, dapibus augue. Etiam hendrerit varius eros, ut consequat libero lacinia id.
+
+##### Header 5
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nisl nec pulvinar ultrices. Nam luctus molestie vehicula. Vestibulum congue feugiat lacus, consectetur scelerisque massa efficitur vulputate. Proin faucibus diam tellus, in auctor ex ullamcorper et.
+
+Quisque metus felis, tempor nec dignissim quis, mollis eget urna. In eget est ligula. Duis ultricies velit ac arcu accumsan aliquet. Pellentesque sollicitudin diam eget augue tincidunt congue. In vulputate dignissim quam et dictum. Praesent sed erat euismod, dictum ligula quis, dapibus augue. Etiam hendrerit varius eros, ut consequat libero lacinia id.

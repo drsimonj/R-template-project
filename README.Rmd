@@ -15,14 +15,16 @@ This project provides a template structure of folders and files for an R project
 
 The project comprises of three main folders in which you would store certain files.
 
-### *data/*
+### data/
 
 This folder should contain data files like .csv, .xls, .spss, etc.
 
-### *R/*
+### R/
 
 This folder should contain R script files.
 
-### *Rmd/*
+Provided in this folder is a template script with the key section headers described by the [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml).
+
+### Rmd/
 
 This folder should contain all R markdown and associated files.
