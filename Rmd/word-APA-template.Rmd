@@ -90,8 +90,6 @@ plot(iris)
 
 But forget Figure `r .fig$ref("cars")`, what you really want to know is iris information, shown in Figure `r .fig$ref("iris")`.
 
-### Header 3
-
 ```{r air, echo=FALSE, tbl.cap=.tbl$cap("air", "Descriptive statistics for airquality")}
 m <- sapply(airquality, mean, na.rm = T)
 s <- sapply(airquality, sd, na.rm = T)
@@ -115,16 +113,21 @@ pander(head(iris))
 
 Or more about iris flowers again in Table `r .tbl$ref("iris_tbl")`.
 
+For header levels 4 and 5, follow APA as follows:
+
+**Header 3**. This is how an APA Header at level 3 should be created.
+
+***Header 4***. This is how an APA Header at level 4 should be created.
+
+*Header 5*. This is how and APA Header at level 5 should be created.
+
+And use the R Markdown level 5 header (with five #s), to create a page break:
+
+#####
+
 Quisque metus felis, tempor nec dignissim quis, mollis eget urna. In eget est ligula. Duis ultricies velit ac arcu accumsan aliquet. Pellentesque sollicitudin diam eget augue tincidunt congue. In vulputate dignissim quam et dictum. Praesent sed erat euismod, dictum ligula quis, dapibus augue. Etiam hendrerit varius eros, ut consequat libero lacinia id.
 
-#### Header 4
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nisl nec pulvinar ultrices. Nam luctus molestie vehicula. Vestibulum congue feugiat lacus, consectetur scelerisque massa efficitur vulputate. Proin faucibus diam tellus, in auctor ex ullamcorper et.
-
 Quisque metus felis, tempor nec dignissim quis, mollis eget urna. In eget est ligula. Duis ultricies velit ac arcu accumsan aliquet. Pellentesque sollicitudin diam eget augue tincidunt congue. In vulputate dignissim quam et dictum. Praesent sed erat euismod, dictum ligula quis, dapibus augue. Etiam hendrerit varius eros, ut consequat libero lacinia id.
-
-##### Header 5
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nisl nec pulvinar ultrices. Nam luctus molestie vehicula. Vestibulum congue feugiat lacus, consectetur scelerisque massa efficitur vulputate. Proin faucibus diam tellus, in auctor ex ullamcorper et.
 
 Quisque metus felis, tempor nec dignissim quis, mollis eget urna. In eget est ligula. Duis ultricies velit ac arcu accumsan aliquet. Pellentesque sollicitudin diam eget augue tincidunt congue. In vulputate dignissim quam et dictum. Praesent sed erat euismod, dictum ligula quis, dapibus augue. Etiam hendrerit varius eros, ut consequat libero lacinia id.
