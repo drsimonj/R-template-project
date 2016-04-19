@@ -19,12 +19,24 @@ The project comprises of three main folders in which you would store certain fil
 
 This folder should contain data files like .csv, .xls, .spss, etc.
 
+Provided in this folder:
+
+- An example data set of bird information taken from the [UCLA statistics teaching material](http://www.stat.ucla.edu/projects/datasets/).
+
 ### R/
 
 This folder should contain R script files.
 
-Provided in this folder is a template script with the key section headers described by the [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml).
+Provided in this folder:
+
+- Template script with the key section headers described by the [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml).
 
 ### Rmd/
 
 This folder should contain all R markdown and associated files.
+
+Provided in this folder:
+
+- **reference_docx/** which should contain any reference documents to be used by an R Markdown file. This currently includes:
+  - A default APA-style word doc, "APA-style-01.docx"
+- A template R Markdown for producing APA-style word documents. For styling, this references "reference_docx/APA-style-01.docx"
