@@ -4,7 +4,7 @@ author: "Author Names"
 date: "Date"
 output:
   word_document:
-    reference_docx: "reference_docx/APA-style-01.docx"
+    reference_docx: "ref-docx/APA-style-01.docx"
     fig_caption: true
 bibliography: "bib/example-bib.bib"
 ---
@@ -64,7 +64,17 @@ This is a template R Markdown file for producing APA-style word documents. Note 
 
 The following text is used to demonstrate the styles that this document has.
 
+R Markdown can output to lots of different formats.
+
+![](img/RMarkdownOutputFormats.png)
+
+But this template is designed specifically to output an APA-style word document.
+
+Learn about changing the word styling [HERE](http://rmarkdown.rstudio.com/articles_docx.html).
+
 # Header 1
+
+Learn Markdown basics, including heading structures, [HERE](http://rmarkdown.rstudio.com/authoring_basics.html).
 
 ```{r cars, echo=FALSE, fig.cap=fig$cap("cars", "Here you see some interesting stuff about cars and such.")}
 plot(cars)
@@ -93,7 +103,7 @@ pander(result)
 
 Or perhaps you'd like to learn about airquality in Table `r tbl$ref("air")`.
 
-Because in @Stodden2014, authors mentioned Word tables as one of the obstacles to effective collaboration.  That's right, tables were an obstacle [@Stodden2014], but we can produce them easily enough here.
+Because in @Stodden2014, authors mentioned Word tables as one of the obstacles to effective collaboration.  That's right, tables were an obstacle [@Stodden2014], but we can produce them easily enough here. Learn more about citations and bibliographies [HERE](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html).
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nisl nec pulvinar ultrices. Nam luctus molestie vehicula. Vestibulum congue feugiat lacus, consectetur scelerisque massa efficitur vulputate. Proin faucibus diam tellus, in auctor ex ullamcorper et.
