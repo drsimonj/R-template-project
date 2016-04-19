@@ -6,7 +6,7 @@ output:
   word_document:
     reference_docx: "reference_docx/APA-style-01.docx"
     fig_caption: true
-bibliography: "bibliography/example-bib.bib"
+bibliography: "bib/example-bib.bib"
 ---
 
 ```{r setup, echo = FALSE}

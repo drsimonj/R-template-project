@@ -39,4 +39,6 @@ Provided in this folder:
 
 - **reference_docx/** which should contain any reference documents to be used by an R Markdown file. This currently includes:
   - A default APA-style word doc, "APA-style-01.docx"
+- **bib/** which should contain bibliographies to be used by an R Markdown file. This currently includes:
+  - An example bibliography file, "example-bib.bib"
 - A template R Markdown for producing APA-style word documents. For styling, this references "reference_docx/APA-style-01.docx"
