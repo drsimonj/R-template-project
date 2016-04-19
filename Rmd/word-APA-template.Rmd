@@ -1,7 +1,7 @@
 ---
-title: "Title"
-author: "Author Names"
-date: "Date"
+title: "APA-style word template"
+author: "Simon A Jackson"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   word_document:
     reference_docx: "ref-docx/APA-style-01.docx"
