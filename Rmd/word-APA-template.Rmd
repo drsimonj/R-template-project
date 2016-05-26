@@ -6,7 +6,8 @@ output:
   word_document:
     reference_docx: "ref-docx/APA-style-01.docx"
     fig_caption: true
-bibliography: "bib/example-bib.bib"
+bibliography: bib/example-bib.bib
+csl: csl/apa.csl
 ---
 
 ```{r setup, echo = FALSE}
@@ -21,9 +22,8 @@ panderOptions('round', 2)                                 # Number of decimal pl
 panderOptions('big.mark', ",")                            # Spearator for large numbers (e.g. 1,000)
 panderOptions('keep.trailing.zeros', TRUE)
 
-# A function for captioning and referencing images
-# Hidden so that rm() can be sued without affecting this
-.fig <- local({
+# A function for captioning and referencing Figures
+fig <- local({
     i <- 0
     ref <- list()
     list(
@@ -37,9 +37,8 @@ panderOptions('keep.trailing.zeros', TRUE)
         })
 })
 
-# A function for captioning and referencing tables
-# Hidden so that rm() can be sued without affecting this
-.tbl <- local({
+# A function for captioning and referencing Tables
+tbl <- local({
     i <- 0
     ref <- list()
     cap <- list()
@@ -72,46 +71,48 @@ But this template is designed specifically to output an APA-style word document.
 
 Learn about changing the word styling [HERE](http://rmarkdown.rstudio.com/articles_docx.html).
 
+It even outputs the citations in proper APA format thanks to the APA citation style sheet (in the csl folder), which comes from [HERE](http://my.ilstu.edu/~wjschne/442/Introduction_to_RMarkdown.html).
+
 # Header 1
 
 Learn Markdown basics, including heading structures, [HERE](http://rmarkdown.rstudio.com/authoring_basics.html).
 
-```{r cars, echo=FALSE, fig.cap=.fig$cap("cars", "Here you see some interesting stuff about cars and such.")}
+```{r cars, echo=FALSE, fig.cap=fig$cap("cars", "Here you see some interesting stuff about cars and such.")}
 plot(cars)
 ```
 
-What you always wanted to know about cars is shown in Figure `r .fig$ref("cars")`
+What you always wanted to know about cars is shown in Figure `r fig$ref("cars")`
 
 ## Header 2
 
-```{r iris, echo=FALSE, fig.cap=.fig$cap("iris", "Here you see some interesting stuff about iris flowers.")}
+```{r iris, echo=FALSE, fig.cap=fig$cap("iris", "Here you see some interesting stuff about iris flowers.")}
 plot(iris)
 ```
 
-But forget Figure `r .fig$ref("cars")`, what you really want to know is iris information, shown in Figure `r .fig$ref("iris")`.
+But forget Figure `r fig$ref("cars")`, what you really want to know is iris information, shown in Figure `r fig$ref("iris")`.
 
-```{r air, echo=FALSE, tbl.cap=.tbl$cap("air", "Descriptive statistics for airquality")}
+```{r air, echo=FALSE, tbl.cap=tbl$cap("air", "Descriptive statistics for airquality")}
 m <- sapply(airquality, mean, na.rm = T)
 s <- sapply(airquality, sd, na.rm = T)
 var <- colnames(airquality)
 result <- data.frame(cbind(var, m*1000, s))
-set.caption(.tbl$cap("air"))
+set.caption(tbl$cap("air"))
 pander(result)
 ```
 
-Or perhaps you'd like to learn about airquality in Table `r .tbl$ref("air")`.
+Or perhaps you'd like to learn about airquality in Table `r tbl$ref("air")`.
 
 Because in @Stodden2014, authors mentioned Word tables as one of the obstacles to effective collaboration.  That's right, tables were an obstacle [@Stodden2014], but we can produce them easily enough here. Learn more about citations and bibliographies [HERE](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html).
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nisl nec pulvinar ultrices. Nam luctus molestie vehicula. Vestibulum congue feugiat lacus, consectetur scelerisque massa efficitur vulputate. Proin faucibus diam tellus, in auctor ex ullamcorper et.
 
-```{r iris_tbl, echo=FALSE, tbl.cap=.tbl$cap("iris_tbl", "More about iris flowers. ***p < .001")}
-set.caption(.tbl$cap("iris_tbl"))
+```{r iris_tbl, echo=FALSE, tbl.cap=tbl$cap("iris_tbl", "More about iris flowers. ***p < .001")}
+set.caption(tbl$cap("iris_tbl"))
 pander(head(iris))
 ```
 
-Or more about iris flowers again in Table `r .tbl$ref("iris_tbl")`.
+Or more about iris flowers again in Table `r tbl$ref("iris_tbl")`.
 
 For header levels 4 and 5, follow APA as follows:
 
@@ -131,7 +132,6 @@ Quisque metus felis, tempor nec dignissim quis, mollis eget urna. In eget est li
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nisl nec pulvinar ultrices. Nam luctus molestie vehicula. Vestibulum congue feugiat lacus, consectetur scelerisque massa efficitur vulputate. Proin faucibus diam tellus, in auctor ex ullamcorper et.
 
 Quisque metus felis, tempor nec dignissim quis, mollis eget urna. In eget est ligula. Duis ultricies velit ac arcu accumsan aliquet. Pellentesque sollicitudin diam eget augue tincidunt congue. In vulputate dignissim quam et dictum. Praesent sed erat euismod, dictum ligula quis, dapibus augue. Etiam hendrerit varius eros, ut consequat libero lacinia id.
-
 
 # References
 
